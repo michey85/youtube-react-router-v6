@@ -48,6 +48,14 @@ main {
   padding-bottom: 1.5rem;
 }
 
+main a {
+  text-decoration: none;
+  color: var(--color-bg);
+}
+main a:hover {
+  text-decoration: underline;
+}
+
 .active {
   color: var(--color-active);
   cursor: default;
