@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --color-bg: #2C2C32;
-  --color-bg-hover: #0f7dc6;
+  --color-active: #0f7dc6;
 }
 
 body {
@@ -28,10 +32,23 @@ header > a:hover {
 
 h1 {
   text-align: center;
+  margin-top: 0;
 }
 
 .container {
   max-width: 900px;
-  padding: 2rem 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 0 auto;
+}
+
+main {
+  min-height: calc(100vh - 85px - 22px);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.active {
+  color: var(--color-active);
+  cursor: default;
 }
