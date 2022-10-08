@@ -13,6 +13,5 @@ root.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>,
-  document.getElementById('root')
+  </StrictMode>
 );
