@@ -14,7 +14,7 @@ const Layout = () => {
             <Outlet />
         </main>
 
-        <footer className="container">&copy; ReactRouter Tutorials 2021</footer>
+        <footer className="container">&copy; ReactRouter Tutorials 2022</footer>
         </>
     )
 }
