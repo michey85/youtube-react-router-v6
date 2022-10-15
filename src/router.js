@@ -12,6 +12,7 @@ import { LoginPage } from './pages/Loginpage';
 import { Layout } from './components/Layout'
 
 import { RequireAuth } from './hoc/RequireAuth'
+import ErrorPage from './pages/Errorpage';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>
@@ -21,7 +22,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="team" element={<p>Our team</p>} />
     </Route>
     <Route path="about-us" element={<Navigate to="/about" replace />} />
-    <Route path="posts" element={<Blogpage />} loader={blogLoader} />
+    <Route path="posts" element={<Blogpage />} loader={blogLoader} errorElement={<ErrorPage />} />
     <Route path="posts/:id" element={<Singlepage />} loader={postLoader} />
     <Route path="posts/:id/edit" element={<Editpost />} />
     <Route path="posts/new" element={
