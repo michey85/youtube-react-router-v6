@@ -60,3 +60,15 @@ main a:hover {
   color: var(--color-active);
   cursor: default;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  gap: 1rem;
+}
